@@ -3,8 +3,6 @@
 /*
 Plugin Name: Whitelabel Dashboard
 
-Plugin URI:ADD GITHUB REPO?
-
 Description: This plugin removes the web host's banner from the WordPress admin dashboard
 
 Version: 1.0.0
