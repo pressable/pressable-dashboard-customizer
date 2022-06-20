@@ -30,4 +30,6 @@ function remove_widget_if_active() {
             add_action('wp_dashboard_setup', 'remove_pressable_widget_with_plugin' );
     }
 }
+
+add_action('wp_dashboard_setup', 'remove_pressable_widget_with_plugin');
 ?>
