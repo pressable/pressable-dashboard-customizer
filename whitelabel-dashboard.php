@@ -3,7 +3,7 @@
 Plugin Name: White-label Dashboard
 Plugin URI: https://pressable.com
 Description: This plugin removes the web host's banner from the WordPress admin dashboard
-Version: 1.0.1
+Version: 1.0.2
 Author: Pressable
 Author URI: https://pressable.com
 License: GPLv2 
@@ -35,4 +35,4 @@ function remove_pressable_widget_with_plugin() {
 
 add_action('wp_dashboard_setup', 'remove_pressable_widget_with_plugin');
 
-?>
+?>add_action('wp_dashboard_setup', 'remove_pressable_widget_with_plugin');
