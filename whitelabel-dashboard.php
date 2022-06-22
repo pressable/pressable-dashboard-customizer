@@ -24,16 +24,10 @@ if (!defined('IS_PRESSABLE')) {
     $theme_functions = file_get_contents(WP_CONTENT_DIR . '/themes/' . $active_theme_slug . '/functions.php'); // get conte$
  
 // what are we looking for in the theme's functions.php?
-$function_name = 'remove_pressable_widget';
     $function_name = 'remove_pressable_widget';
  
-// remove the "Welcome to Pressable" widget box from dashboard if functions.php isn't already removing it
-function remove_pressable_widget_with_plugin() {
     if (!strpos((string) $theme_functions, (string) $function_name)) { 
         remove_meta_box( 'pressable_dashboard_widget', 'dashboard', 'normal' );
     }
 }
 
-add_action('wp_dashboard_setup', 'remove_pressable_widget_with_plugin');
-
-?>add_action('wp_dashboard_setup', 'remove_pressable_widget_with_plugin');
