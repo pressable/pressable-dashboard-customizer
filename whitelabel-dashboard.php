@@ -13,7 +13,7 @@ License: GPLv2
 if (!defined('ABSPATH')) {
     exit;
 }
-
+ 
 // plugin can only work for site hosted on Pressable.
 if (!defined('IS_PRESSABLE')) {
     return;
@@ -29,7 +29,6 @@ function remove_pressable_widget_with_plugin() {
 // what are we looking for in the theme's functions.php?
     $function_name = 'remove_pressable_widget';
  
-
     if (!strpos($theme_functions, $function_name)) { 
         remove_meta_box( 'pressable_dashboard_widget', 'dashboard', 'normal' );
     }
