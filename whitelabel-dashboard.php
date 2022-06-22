@@ -29,7 +29,7 @@ $function_name = 'remove_pressable_widget';
  
 // remove the "Welcome to Pressable" widget box from dashboard if functions.php isn't already removing it
 function remove_pressable_widget_with_plugin() {
-    if (!strpos($theme_functions, $function_name)) { 
+    if (!strpos((string) $theme_functions, (string) $function_name)) { 
         remove_meta_box( 'pressable_dashboard_widget', 'dashboard', 'normal' );
     }
 }
