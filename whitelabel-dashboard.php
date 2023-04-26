@@ -1,11 +1,8 @@
 <?php
 /*
 Plugin Name: White-label Dashboard
-Plugin URI: https://pressable.com
-Description: This plugin removes the web host's banner from the WordPress admin dashboard
+Description: This plugin removes a welcome banner from the WordPress Admin dashboard.
 Version: 1.0.2
-Author: Pressable
-Author URI: https://pressable.com
 License: GPLv2 
 */
  
